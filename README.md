@@ -2,3 +2,4 @@
 -Question.js added
 -CSS Stylesheet added
 -Main.js added
+-Added clear button function and local storage to keep score.
