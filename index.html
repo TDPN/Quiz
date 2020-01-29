@@ -1,54 +1,75 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Quiz Wiz</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<title>F.R.I.E.N.D.S Quiz</title>
 </head>
 <body>
-    <div class="grid">
-        <div id="quiz">
-            <div class="col-sm-6 text-center container-fluid"></div>
-            <h1>How well do you know F.R.I.E.N.D.S?</h1>
-            <div id="startButton"></div>
-            </div>
-            <div class="col-sm-6 text-center container-fluid">
-              <h5>Time Remaining: <div id="timerLength"></div></h5>
-            <hr style="margin-bottom: 20px">
-
-            <p id="question"></p>
-
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button>
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
-            </div>
-
-            <hr style="margin-top: 50px">
-            <footer>
-                <p id="progress">Question x of y</p>
-            </footer>
+<div class="jumbotron">
+	  <div class="container">
+      <div class='row'>
+        <div class="col-sm-6 text-center container-fluid">
+    	    <h1>How well do you know F.R.I.E.N.D.S?</h1>
+    	    
+          <div id="startButton"></div>
         </div>
-    </div>
+        <div class="col-sm-6 text-center container-fluid">
+          <h5>Time Remaining: <div id="timerLength"></div></h5>
+            <h5>
+              <div id="questionContainer"></div>
+            </h5>
+            <p>
+              <div id="button-dump"></div>
+            </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+	         <div class="container-fluid text-center">
+             
+           </div>
+        </div>
+      </div>
+	  </div>
+	<div>
 
-
-
-   
-
-<script src="question.js"></script>
-<script src="main.js"></script>
-
-
-</body>
-
-<footer class="container-fluid text-center bg-dark">
-    <div class="row">
-      <div class="col-sm-12">
-        <p>Copyright &copy; 2020 Don Nguyen</p>
+  <div class="jumbotron">
+    <div class="container">
+      <div class='row'>
+        <div class="col-sm-6 text-center container-fluid">
+          <div id="resetButton"></div>
+        </div>
+        <div class="col-sm-6 text-center container-fluid">
+          <h5>Game Stats:</h5>
+          <div>Correct: <span id="correctCount"></span></div>
+          <div>Incorrect: <span id="incorrectCount"></span></div>
+          <div>Unanswered: <span id="unanswerCount"></span></div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+           <div class="container-fluid text-center">
+             
+           </div>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
 
 
+<script type="text/javascript" src="assets/javascript/question.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+
+	
+</body>
 </html>

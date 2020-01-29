@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://i.ytimg.com/vi/LUBLhoenPFo/maxresdefault.jpg');
+    background-repeat: round;
+	background-size: contain;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
